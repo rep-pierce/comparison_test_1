@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Pie Chart{% endblock %}
+
+{% block content %}
+    <h1>Home Page</h1>
+    <div>
+        {% for input in criteria %}
+            {% include 'input_item.html' %}
+        {% endfor %}
+    </div>
+{% endblock %}

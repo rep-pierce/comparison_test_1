@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="crit">
+        <div>
+            <h2>{{ input.title }}</h2>
+            <ul>
+                <li>
+                    {{ input.weight }}
+                </li>
+                <li>
+                    <script>
+                        document.write(getWeight(input.total_score));
+                    </script>
+                    <button>Increase Weight</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

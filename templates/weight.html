@@ -1,0 +1,10 @@
+<script>
+    function getWeight(input){
+        let total = 0
+        const criterias = document.querySelectorAll('.crit');
+        criterias.forEach(crit => {
+            total += crit.total_score
+        })
+        return (input/total) * 100
+    }
+</script>
